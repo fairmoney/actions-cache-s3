@@ -84,10 +84,12 @@ export function getInputS3ClientConfig(): S3ClientConfig | undefined {
     }
 
     const s3config = {
+      /*
         credentials: {
           accessKeyId: core.getInput(Inputs.AWSAccessKeyId),
           secretAccessKey: core.getInput(Inputs.AWSSecretAccessKey)
         },
+      */
         region: core.getInput(Inputs.AWSRegion),
         endpoint: core.getInput(Inputs.AWSEndpoint),
         bucketEndpoint: core.getBooleanInput(Inputs.AWSS3BucketEndpoint),
